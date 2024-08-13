@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air Quality in Cents</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">↑</button>
+    <header>
+        <h1>Air Quality in Cents</h1>
+    </header>
+    <div class="sidebar">
+        <a href="#AQS">AQS</a>
+        <a href="#AQI">AQI</a>
+        <a href="#VOC">VOC</a>
+        <a href="#PM1.0">PM<sub>1.0</sub></a>
+        <a href="#PM2.5">PM<sub>2.5</sub></a>
+        <a href="#PM10">PM<sub>10</sub></a>
+        <a href="#CO">CO</a>
+        <a href="#NO">NO</a>
+        <a href="#NO2">NO<sub>2</sub></a>
+        <a href="#O3">O<sub>3</sub></a>
+        <a href="#SO2">SO<sub>2</sub></a>
+        <a href="#NH3">NH<sub>3</sub></a>
+        <a href="#Temperature">Temperature</a>
+        <a href="#Humidity">Humidity</a>
+        <a href="#Pressure">Pressure</a>
+        <a href="#Wind speed">Wind speed</a>
+        <a href="#Wind peak gust">Wind peak gust</a>
+        <a href="#Data sources">Data sources</a>
+        <a href="#Statistical analysis">Statistical analysis</a>
+        <a href="#Maps">Maps</a>
+        <a href="#Legal">Legal info</a>
+        <a href="#Links">Links</a>
+        <a href="#Support">Support</a>
+        <a href="#Disclaimer">Disclaimer</a>
+    </div>
+    <div class="content">
+        <p>This website presents air quality measurements in Cents.</p>
+        <hr>
+        <h2 id="AQS">AQS</h2>
+        <p>The air quality measurement device detects a range of harmful gases, toxins and Volatile Organic Compounds (VOCs) as well as Particulate Matter (PM). For convenience an accumulative parameter called Air Quality Score (AQS) gives an understanding of the air quality. AQS points range from 0 (severely polluted air) to 100 (very clean). Below is a description of AQS levels:</p>
+        <br>
+        {{ aqs_exc }}
+        <br>
+        {{ fig_aqs }}
+        <hr>
+        <h2 id="AQI">AQI</h2>
+        <p>Air Quality Index (AQI) is an aggregate measure of NO<sub>2</sub>, PM<sub>10</sub>, O<sub>3</sub>, and PM<sub>2.5</sub>. Below is a description of AQI levels:</p>
+        <br>
+        {{ aqi_exc }}
+        <br>
+        <img src="{{ fig_aqi }}" alt="AQI">
+        <hr>
+        <h2 id="VOC">VOC</h2>
+        <p>Volatile organic compounds (VOCs) are emitted as gases from certain solids or liquids. In fact, they may be emitted by a wide array of products, including paints and lacquers, paint strippers, cleaning supplies, household products such as varnishes and wax, cleaning and disinfecting, products, building materials (plywood and particleboard) and furnishings, office equipment such as copiers and printers, glues and adhesives. VOCs can cause eye, nose, and throat irritation as well as headaches, loss of coordination, and nausea. They may also cause damage to the liver, kidney, and central nervous system. Some are suspected or known to cause cancer. Examples are gasoline, benzene, formaldehyde, solvents such as toluene and xylene.</p>
+        <br>
+        {{ voc_exc }}
+        <br>
+        <img src="{{ fig_voc }}" alt="VOC">
+        <hr>
+        <h2 id="PM1.0">PM<sub>1.0</sub></h2>
+        <p>Particulate matter (PM) components include finely divided solids or liquids such as dust, pollen, fly ash, soot, smoke, aerosols, fumes, mists and condensing vapours that can be suspended in the air for extended periods of time.</p>
+        <p>PM<sub>1.0</sub> is a particulate matter with a diameter smaller than 1 micron. It is a major subset of PM<sub>2.5</sub>. These are extremely fine particles that are even more likely to reach deeper into the respiratory system than PM<sub>2.5</sub>. PM<sub>1.0</sub> is the by-product of emissions from factories, vehicular pollution, construction activities, and road dust. It is not dispersed and stays suspended in the air that you breathe.</p>
+        <br>
+        {{ pm1_exc }}
+        <br>
+        <img src="{{ fig_pm1 }}" alt="PM1.0">
+        <hr>
+        <h2 id="PM2.5">PM<sub>2.5</sub></h2>
+        <p>PM<sub>2.5</sub> or fine particles are 2.5 micrometers in diameter or smaller. Fine particles are produced from all types of combustion, including motor vehicles, power plants, residential wood burning, wildfires, agricultural burning, and some industrial processes. While PM<sub>10</sub> ends up in your lungs, PM<sub>2.5</sub> is more dangerous as it can transfer from your lungs into your bloodstream. From your bloodstream, it can it end up anywhere in your body, thereby making it "the invisible killer".</p>
+        <br>
+        {{ pm2_exc }}
+        <br>
+        <img src="{{ fig_pm2 }}" alt="PM2.5">
+        <hr>
+        <h2 id="PM10">PM<sub>10</sub></h2>
+        <p>PM<sub>10</sub> or coarse dust particles refer to particles with a diameter less than or equal to 10 microns in size. They are about 30 times smaller than the width of a human hair and are small enough to evade our defensive nose hairs and get inhaled into our lungs. Sources of this PM<sub>10</sub> include crushing/grinding operations, and dust stirred up by vehicles. Pollen, mold spores, and plant and insect particles are also considered PM<sub>10</sub>.</p>
+        <br>
+        {{ pm10_exc }}
+        <br>
+        <img src="{{ fig_pm10 }}" alt="PM10">
+        <hr>
+        <h2 id="CO">CO</h2>
+        <p>Carbon monoxide (CO) is a poisonous, flammable gas that is colorless, odorless, tasteless, and slightly less dense than air. It is a key ingredient in many processes in industrial chemistry. CO is an atmospheric pollutant in urban areas, chiefly from the exhaust of internal combustion engines (including vehicles), but also from incomplete combustion of various other fuels (including wood, coal, charcoal, oil, paraffin, propane, natural gas, and trash).</p>
+        <br>
+        {{ co_exc }}
+        <br>
+        <img src="{{ fig_co }}" alt="CO">
+        <hr>
+        <h2 id="NO">NO</h2>
+        <p>Nitrogen monoxide</p>
+        <img src="{{ fig_no }}" alt="NO">
+        <hr>
+        <h2 id="NO2">NO<sub>2</sub></h2>
+        <p>Nitrogen dioxide (NO<sub>2</sub>) is poisonous and can be fatal if inhaled in large quantities. NO<sub>2</sub> is expelled from high temperature combustion. It can be seen as a brown haze dome above or a plume downwind of cities. One of the most prominent air pollutants, this reddish-brown toxic gas has a characteristic sharp, biting odor.</p>
+        <br>
+        {{ no2_exc }}
+        <br>
+        <img src="{{ fig_no2 }}" alt="NO2">
+        <hr>
+        <h2 id="O3">O<sub>3</sub></h2>
+        <p>Ozone (O<sub>3</sub>) is created when NOx and VOCs mix. It is a pollutant and a component of smog that is produced in large quantities as a result of human activities (mostly the combustion of fossil fuels).</p>
+        <br>
+        {{ o3_exc }}
+        <br>
+        <img src="{{ fig_o3 }}" alt="O3">
+        <hr>
+        <h2 id="SO2">SO<sub>2</sub></h2>
+        <p>Sulfur dioxide (SO<sub>2</sub>) is produced in various industrial processes. Coal and petroleum often contain sulfur compounds, and their combustion generates sulfur dioxide. Further oxidation of SO<sub>2</sub>, usually in the presence of a catalyst such as NO<sub>2</sub>, forms H<sub>2</sub>SO<sub>4</sub>, and thus acid rain is formed.</p>
+        <br>
+        {{ so2_exc }}
+        <br>
+        <img src="{{ fig_so2 }}" alt="SO2">
+        <hr>
+        <h2 id="NH3">NH<sub>3</sub></h2>
+        <p>Ammonia (NH<sub>3</sub>) is emitted mainly by agricultural waste. It is normally encountered as a gas with a characteristic pungent odor. Ammonia contributes significantly to the nutritional needs of terrestrial organisms by serving as a precursor to foodstuffs and fertilizers. Although in wide use, ammonia is both caustic and hazardous. In the atmosphere, ammonia reacts with oxides of nitrogen and sulfur to form secondary particles.</p>
+        <br>
+        <img src="{{ fig_nh3 }}" alt="NH3">
+        <hr>
+        <h2 id="Temperature">Temperature</h2>
+        <img src="{{ fig_temp }}" alt="Temperature">
+        <hr>
+        <h2 id="Humidity">Humidity</h2>
+        <img src="{{ fig_humidity }}" alt="Humidity">
+        <hr>
+        <h2 id="Pressure">Pressure</h2>
+        <img src="{{ fig_pressure }}" alt="Pressure">
+        <hr>
+        <h2 id="Wind speed">Wind speed</h2>
+        <p>The graph below is called &quot;wind rose&quot;. The frequency of winds over the time period is plotted by wind direction, with colour bands showing wind speed ranges. The direction of the longest spoke shows the wind direction with the greatest frequency.</p>
+        {{ fig_wra }}
+        <hr>
+        <h2 id="Wind peak gust">Wind peak gust</h2>
+        <p>The graph below is called &quot;wind rose&quot;. The frequency of winds over the time period is plotted by wind direction, with colour bands showing wind speed ranges. The direction of the longest spoke shows the wind direction with the greatest frequency.</p>
+        {{ fig_wrg }}
+        <hr>
+        <h2 id="Data sources">Data sources</h2>
+        {{ data_sources }}
+        <hr>
+        <h2 id="Statistical analysis">Statistical analysis</h2>
+        {{ descriptive_stats }}
+        <hr>
+        <h2 id="Maps">Maps</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3562.218671955893!2d6.173996955706674!3d49.6182709530268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2slu!4v1723238669428!5m2!1sen!2slu" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <hr>
+        <h2 id="Legal">Legal info</h2>
+        <ul>
+            <li><a href="http://data.europa.eu/eli/dir/2008/50/oj" target="_blank">Directive 2008/50/EC on ambient air quality and cleaner air for Europe</a></li>
+            <br>
+            <li><a href="http://data.legilux.public.lu/eli/etat/leg/rgd/2012/05/15/n1/jo" target="_blank">Règlement grand-ducal du 15 mai 2012 modifiant le règlement grand-ducal du 29 avril 2011 portant application de la directive 2008/50/CE du Parlement européen et du Conseil du 21 mai 2008 concernant la qualité de l'air ambiant et un air pur pour l'Europe.</a></li>
+        </ul>
+        <hr>
+        <h2 id="Links">Links</h2>
+        <ul>
+            <li><a href="https://guichet.public.lu/fr/citoyens/justice/voies-recours-reglement-litiges/plaintes-administratives/plainte-aev.html" target="_blank">Submit a complaint about air pollution to the administration</li>
+            <br>
+            <li><a href="https://cents-online.lu" target="_blank">Syndicat d'initiative et d’intérêts locaux Fetschenhof-Cents asbl</a></li>
+            <br>
+            <li><a href="https://mecb.gouvernement.lu/en.html" target="_blank">Ministry of the Environment, Climate and Biodiversity</a></li>
+            <br>
+            <li><a href="https://environnement.public.lu/fr/loft/air.html" target="_blank">emwelt.lu</a></li>
+        </ul>
+        <hr>
+        <h2 id="Support">Support</h2>
+        <p>Let us know if you have any questions or comments.</p>
+        <form action="mailto:avrilionis@gmail.com?subject=Air%20quality%20in%20Cents" method="post" enctype="text/plain">
+            Full name:<br>
+            <input type="text" name="fullname"><br>
+            Comments:<br>
+            <textarea name="comment"></textarea>
+            <br>
+            <input type="submit" value="Send">
+            <input type="reset" value="Reset">
+        </form>
+        <hr>
+        <h2 id="Disclaimer">Disclaimer</h2>
+        <div class="warning-box">
+            <div class="warning-icon">⚠️</div>
+            <div class="warning-text">
+                This website displays unofficial data. The accuracy of the measurements is not guaranteed. The data are not to be used as a replacement for official measurements by competent national authorities.
+            </div>
+        </div>
+        <p>Last data refresh: {{ last_update }}</p>
+        <p>Period covered: From {{ start_dt }} to {{ end_dt }} ({{ duration }})</p>
+    </div>
+    <script src="script.js">
+    </script>
+</body>
+
+</html>

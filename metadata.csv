@@ -1,0 +1,59 @@
+Source,Metric,min,max,Qualitative name,Notes,Sort order,Frequency
+Atmotube,AQS,81,100,Good,"Air quality is considered satisfactory, and air pollution poses little or no risk.",4,Minute
+Atmotube,AQS,61,80,Moderate,"Air quality is acceptable, however for some pollutants there may be a moderate concern for a small number of people who are very sensitive to air pollution.",3,Minute
+Atmotube,AQS,41,60,Polluted,"Air quality is poor, and you may experience symptoms such as coμghing and throat irritation. The pollution may cause breathing discomfort on prolonged exposure, and discomfort to people with heart disease or asthma. Try not to stay in this environment for a long period of time.",2,Minute
+Atmotube,AQS,21,40,Very polluted,"Air quality is very poor. It may cause respiratory illness in people on prolonged exposure. The effect may be more pronounced in people with asthma, lung and heart diseases. Adults and children with lung problems and adults with heart problems should reduce strenuous physical exertion, particularly if they experience symptoms. People with asthma may find that they need to use their rescue inhaler more often. Older people should also reduce physical exertion.",1,Minute
+Atmotube,AQS,0,20,Severly polluted,"Air pollution is severe. At this level it may be necessary to take emergency measures for patients and members of sensitive groups, and this can have harmful consequences for most of the people. Health impacts may be experienced even during light physical activity. Healthy people may experience adverse symptoms.",0,Minute
+OpenWeather,AQI,5,5,Very high,"NO<sub>2</sub> in μg/m³ > 400<br>PM<sub>10</sub> in μg/m3 > 180<br>O<sub>3</sub> in μg/m3 > 240<br>PM<sub>2.5</sub> in μg/m3 > 110",4,Hour
+OpenWeather,AQI,4,4,High,"NO<sub>2</sub> in μg/m³ between 200 and 400<br>PM<sub>10</sub> in μg/m3 between 90 and 180<br>O<sub>3</sub> in μg/m3 between 180 and 240<br>PM<sub>2.5</sub> in μg/m3 between 55 and 110",3,Hour
+OpenWeather,AQI,3,3,Medium,"NO<sub>2</sub> in μg/m³ between 100 and 200<br>PM<sub>10</sub> in μg/m3 between 50 and 90<br>O<sub>3</sub> in μg/m3 between 120 and 180<br>PM<sub>2.5</sub> in μg/m3 between 30 and 55",2,Hour
+OpenWeather,AQI,2,2,Low,"NO<sub>2</sub> in μg/m³ between 50 and 100<br>PM<sub>10</sub> in μg/m3 between 25 and 50<br>O<sub>3</sub> in μg/m3 between 60 and 120<br>PM<sub>2.5</sub> in μg/m3 between 15 and 30",1,Hour
+OpenWeather,AQI,1,1,Very low,"NO<sub>2</sub> in μg/m³ between 0 and 50<br>PM<sub>10</sub> in μg/m3 between 0 and 25<br>O<sub>3</sub> in μg/m3 between 0 and 60<br>PM<sub>2.5</sub> in μg/m3 between 0 and 15",0,Hour
+Atmotube,VOC in ppm,5.5,7.5,Hazardous,"VOCs concentration is toxic and may be very dangerous. Try to stay away from this environment even if you are not sensitive to air pollution.",4,Minute
+Atmotube,VOC in ppm,2.5,5.5,Very high,"The concentration of VOCs is very high. It may cause more serious immediate health effects, such as worsening of asthma symptoms. Long-term exposure of high levels of volatile organic compounds can cause damage to the liver, kidneys, and central nervous system.",3,Minute
+Atmotube,VOC in ppm,1,2.5,High,"The concentration of VOCs is high. Discomfort expected and headaches are possible. Try not to stay in this environment for a long time. Longer exposure can lead to eye and respiratory tract irritation, dizziness, visual disorders, fatigue, loss of coordination, allergic skin reactions, and nausea.",2,Minute
+Atmotube,VOC in ppm,0.3,1,Moderate,"The VOC level is acceptable although irritation and discomfort may be possible. VOCs may take symptoms worse in people who have asthma or are particularly sensitive to chmicals.",1,Minute
+Atmotube,VOC in ppm,0,0.3,Good,"VOCs concentration are at a low level. No irritation or discomfort expected.",0,Minute
+Atmotube,PM₁ in μg/m³,95,100,Severely polluted,"Health alert: everyone may experience more serious health effects. Everyone should avoid all outdoor exertion.",4,Minute
+Atmotube,PM₁ in μg/m³,61,95,Very polluted,"Everyone may begin to experience health effects; for members of sensitive groups health effects may be more serious.",3,Minute
+Atmotube,PM₁ in μg/m³,34,61,Polluted,"Members of sensitive groups may experience health effects. Most people are unlikely to be affected.",2,Minute
+Atmotube,PM₁ in μg/m³,14,34,Moderate,"Air quality is acceptable; however, some pollutants can cause moderate health concerns for a very small number of people who are unusually sensitive to air pollution.",1,Minute
+Atmotube,PM₁ in μg/m³,0,14,Good,"Air quality is considered satisfactory, and air pollution poses little or no risk.",0,Minute
+Atmotube,PM₂.₅ in μg/m³,140,170,Severely polluted,"Health alert: everyone may experience more serious health effects. Everyone should avoid all outdoor exertion.",4,Minute
+Atmotube,PM₂.₅ in μg/m³,90,140,Very polluted,"Everyone may begin to experience health effects; for members of sensitive groups health effects may be more serious.",3,Minute
+Atmotube,PM₂.₅ in μg/m³,50,90,Polluted,"Members of sensitive groups may experience health effects. Most people are unlikely to be affected.",2,Minute
+Atmotube,PM₂.₅ in μg/m³,20,50,Moderate,"Air quality is acceptable; however, some pollutants can cause moderate health concerns for a very small number of people who are unusually sensitive to air pollution.",1,Minute
+Atmotube,PM₂.₅ in μg/m³,0,20,Good,"Air quality is considered satisfactory, and air pollution poses little or no risk.",0,Minute
+Atmotube,PM₁₀ in μg/m³,200,250,Severely polluted,"Health alert: everyone may experience more serious health effects. Everyone should avoid all outdoor exertion.",4,Minute
+Atmotube,PM₁₀ in μg/m³,125,200,Very polluted,"Everyone may begin to experience health effects; for members of sensitive groups health effects may be more serious.",3,Minute
+Atmotube,PM₁₀ in μg/m³,75,125,Polluted,"Members of sensitive groups may experience health effects. Most people are unlikely to be affected.",2,Minute
+Atmotube,PM₁₀ in μg/m³,30,75,Moderate,"Air quality is acceptable; however, some pollutants can cause moderate health concerns for a very small number of people who are unusually sensitive to air pollution.",1,Minute
+Atmotube,PM₁₀ in μg/m³,0,30,Good,"Air quality is considered satisfactory, and air pollution poses little or no risk.",0,Minute
+OpenWeather,CO in μg/m³,15400,18400,Very poor,"Very poor",4,Hour
+OpenWeather,CO in μg/m³,12400,15400,Poor,"Poor",3,Hour
+OpenWeather,CO in μg/m³,9400,12400,Moderate,"Moderate",2,Hour
+OpenWeather,CO in μg/m³,4400,9400,Fair,"Fair",1,Hour
+OpenWeather,CO in μg/m³,0,4400,Good,"Good",0,Hour
+OpenWeather,NO in μg/m³,,,,,,Hour
+OpenWeather,NO₂ in μg/m³,200,250,Very poor,"Very poor",4,Hour
+OpenWeather,NO₂ in μg/m³,150,200,Poor,"Poor",3,Hour
+OpenWeather,NO₂ in μg/m³,70,150,Moderate,"Moderate",2,Hour
+OpenWeather,NO₂ in μg/m³,40,70,Fair,"Fair",1,Hour
+OpenWeather,NO₂ in μg/m³,0,40,Good,"Good",0,Hour
+OpenWeather,O₃ in μg/m³,180,225,Very poor,"Very poor",4,Hour
+OpenWeather,O₃ in μg/m³,140,180,Poor,"Poor",3,Hour
+OpenWeather,O₃ in μg/m³,100,140,Moderate,"Moderate",2,Hour
+OpenWeather,O₃ in μg/m³,60,100,Fair,"Fair",1,Hour
+OpenWeather,O₃ in μg/m³,0,60,Good,"Good",0,Hour
+OpenWeather,SO₂ in μg/m³,350,450,Very poor,"Very poor",4,Hour
+OpenWeather,SO₂ in μg/m³,250,350,Poor,"Poor",3,Hour
+OpenWeather,SO₂ in μg/m³,80,250,Moderate,"Moderate",2,Hour
+OpenWeather,SO₂ in μg/m³,20,80,Fair,"Fair",1,Hour
+OpenWeather,SO₂ in μg/m³,0,20,Good,"Good",0,Hour
+OpenWeather,NH₃ in μg/m³,,,,,,Hour
+Atmotube,Temperature in ˚C,,,,,,Minute
+Atmotube,Humidity in %,,,,,,Minute
+Atmotube,Pressure in hPa,,,,,,Minute
+Meteostat,Wind (from) direction in degrees,,,,,,Hour
+Meteostat,Average wind speed in km/h,,,,,,Hour
+Meteostat,Wind peak gust in km/h,,,,,,Hour
