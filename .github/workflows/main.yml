@@ -1,9 +1,9 @@
-name: Run Jupyter Notebook
+name: run-jupyter-notebook
 
 on:
   push:
     branches:
-      - main  # Change this to your default branch if it's not 'main'
+      - main
 
 jobs:
   run-notebook:
@@ -22,6 +22,7 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install jupyter nbconvert
+        pip install -r requirements.txt
 
     - name: Run Jupyter Notebook
       run: |
