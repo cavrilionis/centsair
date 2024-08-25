@@ -3,4 +3,5 @@ matplotlib==3.8.4
 meteostat==1.6.8
 pandas==2.2.2
 plotly==5.22.0
+python-dotenv==1.0.1
 Requests==2.32.3

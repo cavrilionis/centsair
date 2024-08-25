@@ -44,6 +44,9 @@ jobs:
         pip install -r requirements.txt
 
     - name: Run Jupyter Notebook
+      env:
+        OWM_API_KEY: ${{ secrets.OWM_API_KEY }}
+        RAPIDAPI_KEY: ${{ secrets.RAPIDAPI_KEY }}
       run: |
         jupyter nbconvert --to notebook --execute centsair.ipynb
 
