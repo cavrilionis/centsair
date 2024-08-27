@@ -6,3 +6,4 @@
 - dash
 - bootstrap
 - https://www.geoportail.lu/en/
+- Fix HTTP 522 error when using Meteostat API
