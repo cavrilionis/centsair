@@ -8,7 +8,7 @@ The following diagram is a summary of the data flow and functionality of the cod
 
 ![data flow](./data_flow.png?raw=true "Data flow")
 
-This repository contains the code to generate this webpage: https://www.centsair.lu
+This repository contains the code to generate <a href="https://www.centsair.lu" target="_blank">this</a> webpage.
 
 ## TO DO
 
