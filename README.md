@@ -8,6 +8,8 @@ The following diagram is a summary of the data flow and functionality of the cod
 
 ![data flow](./data_flow.png?raw=true "Data flow")
 
+This repository contains the code to generate this webpage: https://www.centsair.lu
+
 ## TO DO
 
 - replace broken links of old png charts with plotly charts
