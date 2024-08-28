@@ -1,4 +1,8 @@
+[![run-jupyter-notebook](https://github.com/cavrilionis/centsair/actions/workflows/main.yml/badge.svg)](https://github.com/cavrilionis/centsair/actions/workflows/main.yml)
+
 # centsair
+
+This repository is about air quality measurements in Cents.
 
 ## TO DO
 
@@ -6,4 +10,3 @@
 - dash
 - bootstrap
 - https://www.geoportail.lu/en/
-- Fix HTTP 522 error when using Meteostat API
