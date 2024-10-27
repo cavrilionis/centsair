@@ -12,7 +12,8 @@ This repository contains the code to generate <a href="https://www.centsair.lu" 
 
 ## TO DO
 
-- replace broken links of old png charts with plotly charts
+- exclude some data
+- refresh data
 - dash
 - bootstrap
 - https://www.geoportail.lu/en/
