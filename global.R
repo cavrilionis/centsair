@@ -6,3 +6,5 @@ suppressPackageStartupMessages({
   library(ggplot2)
   library(bslib)
 })
+
+options(sass.cache = file.path(tempdir(), "sass_cache"))
