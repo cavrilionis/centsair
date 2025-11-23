@@ -4,4 +4,5 @@ suppressPackageStartupMessages({
   library(dplyr)
   library(shinyjs)
   library(ggplot2)
+  library(bslib)
 })
