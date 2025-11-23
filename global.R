@@ -3,4 +3,5 @@ suppressPackageStartupMessages({
   library(shinythemes)
   library(dplyr)
   library(shinyjs)
+  library(ggplot2)
 })
